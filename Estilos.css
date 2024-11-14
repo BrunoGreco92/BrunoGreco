@@ -241,7 +241,7 @@ nav ul li {
     display: flex;
     gap: 20px;
     align-items: flex-start;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    flex-wrap: wrap; 
 }
 
 .form-section, .map-section {
@@ -282,16 +282,6 @@ nav ul li {
     border-radius: 4px;
     border: 0;
 }
-
-.map-section{
-    padding-right: 3%;
-}
-
-
-
-
-
-
 
 .comentarios-section {
     padding: 20px;
