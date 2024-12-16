@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Chief",
+        "price": 500000,
+        "description": "Maquina Chief bla bla bla",
+        "type": "Maquinaria"
+    },
+    {
+        "id": 2,
+        "name": "Davidson",
+        "price": 750000,
+        "description": "Maquina Davidson bla bla bla",
+        "type": "Maquinaria"
+    },
+    {
+        "id": 3,
+        "name": "Multilith",
+        "price": 1000000,
+        "description": "Maquina Multilith bla bla bla",
+        "type": "Maquinaria"
+    }
+]
