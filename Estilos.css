@@ -112,29 +112,27 @@ li a{
   
 
   .botonvermas {
-    border-radius: 4px;
+    text-shadow: none;
+    box-sizing: border-box;
+    background: #004C8F;
+    border-radius: 15px;
+    color: #fff;
+    display: table;
+    font-size: 15px;
+    font-weight: 600;
     margin: auto;
-    font-size: 17px;
-    color: black;
-    background-color: #f0f0f0; 
+    max-width: 200px;
+    padding: 6px 12px;
+    text-align: center;
     text-decoration: none;
-    display: inline-block; 
-    transition: all 0.3s ease; 
 }
 
-/* Efecto al pasar el cursor por encima */
+
 .botonvermas:hover {
-    background-color: #d9d9d9; 
+    background-color: #ffffff; 
     color: #333; 
     transform: scale(1.1); 
 }
-
-  .botonvermas a{
-    color: black;
-    text-decoration: none;
-
-  }
-
 
 
   .form-container {
@@ -245,7 +243,7 @@ nav ul li {
 }
 
 .form-section, .map-section {
-    flex: 1; /* Ambos elementos ocupan el mismo ancho cuando están en fila */
+    flex: 1; 
 }
 
 .form-container {
@@ -415,3 +413,43 @@ nav ul li {
     cursor: pointer;
   }
 
+.Descripcion {
+    white-space: pre-line;
+      line-height: 1.5
+}
+
+.btnComprar {
+    text-shadow: none;
+    box-sizing: border-box;
+background: #004C8F;
+    border-radius: 50px;
+    color: #fff;
+    display: table;
+    font-size: 15px;
+    font-weight: 600;
+    margin: auto;
+    max-width: 170px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+ .fas {
+    color:blue;
+    font-size: 30px;  
+    }
+
+
+    .VaciarCarrito{
+    text-shadow: none;
+    box-sizing: border-box;
+    background: #004C8F;
+    border-radius: 50px;
+    color: #fff;
+    display: table;
+    font-size: 15px;
+    font-weight: 600;
+    margin: auto;
+    max-width: 170px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;}

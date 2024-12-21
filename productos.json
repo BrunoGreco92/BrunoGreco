@@ -19,5 +19,17 @@
         "price": 1000000,
         "description": "Maquina Multilith bla bla bla",
         "type": "Maquinaria"
+    },
+    {
+        "id": 4,
+        "name": "Solna",
+        "price": 1500000,
+        "description": "maquina solna bla bla bla ",
+        "type": "Maquinaria",
+        "img": "img/Solna.webp"
     }
 ]
+
+
+
+

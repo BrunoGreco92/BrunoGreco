@@ -70,39 +70,13 @@ productos.forEach(gg => { console.log(gg.name) });
 let contenedorProductos = document.getElementById('Maquinaria');
 let contenedorRepuestos = document.getElementById("Repuestos");
 
-productos.forEach(producto => {
-    let htmlproducto = '<div class="item_flex">' +
-        '<img src="' + producto.img + '"  width="150" height="100" alt="">' +
-        '<h3>' + producto.name + '</h3>' +
-        '<span class="precio">$' + producto.price + '</span></br>' +
-        '<input class="descripcion" type="hidden" value="' + producto.description + '"  />' +
-        '<input class="productid" type="hidden"  value="' + producto.id + '" />' +
-        '<input class="productname" type="hidden"  value="' + producto.name + '" />' +
-        '<input class="productprice" type="hidden"  value="' + producto.price + '" />' +
-        '<button class="botonvermas" type="button">' +
-        '<a class="open-modal">Ver Más</a>' +
-        '</button>' +
-        '</div>';
-
-    if (producto.type == "Maquinaria") {
-        contenedorProductos.innerHTML += htmlproducto
-
-    }
-    else if (producto.type == "Repuestos") {
-        contenedorRepuestos.innerHTML += htmlproducto
-
-    }
-})
-
 
 const modal = document.getElementById('myModal');
 const modalCarrito = document.getElementById('myModalCarrito');
 const btnComprar = document.getElementById('Comprar');
 const openModal = document.getElementsByClassName('botonvermas')[0];
-const Eliminaritem = document.querySelector('.equis');
 const closeModal = document.querySelector('.close');
 const closeModal2 = document.querySelector('.close2');
-const VaciarCarrito = document.getElementById('VaciarCarrito')
 
 
 document.addEventListener('click', (event) => {
@@ -133,10 +107,9 @@ document.addEventListener('click', (event) => {
             let itemCarrito = JSON.parse (localStorage.getItem(key));
 
             carrito.innerHTML += ' <div class="comentario">'+
-                   '<p><strong><u> '+ itemCarrito.name +' </u>:</strong>$'+ itemCarrito.price+'</p>'+
+                   '<p><strong<u> '+ itemCarrito.name +' </u>:</strong>$'+ itemCarrito.price+'</p>'+
                 '</div>'
-            });
-            
+        });
     }
 
 });
@@ -144,13 +117,6 @@ document.addEventListener('click', (event) => {
 closeModal.addEventListener('click', () => {
     modal.style.display = 'none';
 });
-
-VaciarCarrito.addEventListener('click', () => {
-    localStorage.clear();
-    let carrito = document.getElementById("Carrito");
-    carrito.innerHTML='';
-});
-
 
 closeModal2.addEventListener('click', () => {
     modalCarrito.style.display = 'none';
@@ -183,5 +149,3 @@ btnComprar.addEventListener("click", function () {
     }
 
 });
-
-//document.getElementById("Numerito").innerText = localStorage.length

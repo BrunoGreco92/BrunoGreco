@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="Estilos.css">
     <link rel="stylesheet" href="Footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
     
@@ -43,9 +45,16 @@
                     Productos
                 </a>
             </li>
+            <li>
+                <a href="#" class="open-modal-carrito fas fa-shopping-cart">
+                <div id="Numerito">
+                    
+                </div>
+                </a>
+            </li>
 
         </ul>
-
+        
     </nav>
 </div>
 </header>
@@ -92,7 +101,7 @@
 
               </div>
 
-              <a class="open-modal-carrito">Ver Carrito</a>
+              
           </section>
     
 
@@ -101,8 +110,8 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2 id="NameModal"></h2>
-    <p id="Descripcion"></p>
-    <button id="Comprar">Comprar</button>
+    <p  class="Descripcion" id="Descripcion"></p>
+    <button class="btnComprar"  id="Comprar">Comprar</button>
   </div>
 </div>
 
@@ -111,6 +120,7 @@
       <span class="close close2">&times;</span>
       <h2> Carrito</h2>
       <p id="Carrito"></p>
+      <button class= "VaciarCarrito"id="VaciarCarrito">Vaciar Carrito</button>
     </div>
   </div>
 <footer>

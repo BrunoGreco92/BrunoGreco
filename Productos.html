@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="Estilos.css">
     <link rel="stylesheet" href="Footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-</head>
+  </head>
 <body>
     
 <header>
    
     <img src="img/Logo2.jpg" alt="Ícono del sitio" class="header-icon">
     <div class="header-text">
-        <h1>Mecánica Gráfica</h1>
+        <h1 >Mecánica Gráfica</h1>
         <h2 class="subtitulo">Angel Greco</h2>
 <hr/>
-    
+
     <nav>
         <ul>
             <li>
@@ -44,9 +45,16 @@
                     Productos
                 </a>
             </li>
+            <li>
+              <a href="#" class="open-modal-carrito fas fa-shopping-cart">
+              <div id="Numerito">
+                  
+              </div>
+              </a>
+          </li>
 
         </ul>
-
+        
     </nav>
 </div>
 </header>
@@ -57,101 +65,69 @@
 <main>
     <section>
         <h2 class="titulo_productos">Maquinaria:</h2>
-        <div class="contenedor_flex">
-          <div class="item_flex">
-            <img src="img/chief.jpg" width="150" height="100" alt="">
-            <h3>Chief</h3>
-            <button class="botonvermas" type="button">
-              <a href="http://google.com">Ver Más</a>
-            </button>
-          </div>
-          <div class="item_flex">
-            <img src="img/Davidson.webp" width="150" height="100"
-             alt="">
-            <h3>Davidson</h3>
-            <button class="botonvermas" type="button">
-              <a href="http://google.com">Ver Más</a>
-            </button>
-          </div>
-          <div class="item_flex">
-            <img src="img/multilith1250.jpeg" width="150" height="100"alt="">
-            <h3>Multilith</h3>
-            <button class="botonvermas" type="button">
-              <a href="http://google.com">Ver Más</a>
-            </button>
-          </div>
-          <div class="item_flex">
-            <img src="img/Solna.webp" width="150" height="100"
-             alt="">
-            <h3>Solna</h3>
-            <button class="botonvermas" type="button">
-              <a href="http://google.com">Ver Más</a>
-            </button>
-          </div>
-          </div>
+        <div class="contenedor_flex" id="Maquinaria">
+         </div>
         </section>
 
         <section2>
             <h2 class="titulo_productos">Repuestos:</h2>
-            <div class="contenedor_flex">
-              <div class="item_flex">
-                <img src="img/Engranajes.webp" width="150" height="100" alt="">
-                <h3>Engranajes</h3>
-                <button class="botonvermas" type="button">
-                  <a href="http://google.com">Ver Más</a>
-                </button>
-              </div>
-              <div class="item_flex">
-                <img src="img/Rodillos.webp" width="150" height="100"
-                 alt="">
-                <h3>Rodillos</h3>
-                <button class="botonvermas" type="button">
-                  <a href="http://google.com">Ver Más</a>
-                </button>
-              </div>
-              <div class="item_flex">
-                <img src="img/Numeradora.PNG" width="150" height="100"alt="">
-                <h3>Numeradora</h3>
-                <button class="botonvermas" type="button">
-                  <a href="http://google.com">Ver Más</a>
-                </button>
-              </div>
+            <div class="contenedor_flex"id="Repuestos">
               </div>
             </section2>
        
+
+            
     
 
 </main>
-<footer>
-  <div class="footer-left">
-      <p><strong>¿Qué hacemos?:</strong></p>
-      <div class="columns">
-          <ul class="col">
-              <li>Reparación</li>
-              <li>Mantenimiento</li>
-          </ul>
-          <ul class="col">
-              <li>Tornería</li>
-              <li>Asesoramiento</li>
-          </ul>
-          <ul class="col">
-              <li>Venta de Maquinaria</li>
-              <li>Atención Personalizada</li>
-          </ul>
-      </div>
-    </div>
-  <div class="footer-right">
-      <p><strong>Encuéntranos en:</strong></p>
-      <a href="https://www.instagram.com/angelgreco59/?hl=es" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-      </a>
-      <a href="https://wa.me/+54 9 11 5828-8851" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-      </a>
-      <a href="https://www.facebook.com/angel.greco.94?locale=es_LA" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-      </a>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="NameModal"></h2>
+    <p  class="Descripcion" id="Descripcion"></p>
+    <button class="btnComprar"  id="Comprar">Comprar</button>
+  </div>
+</div>
+
+<div id="myModalCarrito" class="modal">
+    <div class="modal-content">
+      <span class="close close2">&times;</span>
+      <h2> Carrito</h2>
+      <p id="Carrito"></p>
+      <button class= "VaciarCarrito"id="VaciarCarrito">Vaciar Carrito</button>
+    </div>
   </div>
+<footer>
+    <div class="footer-left">
+        <p><strong>¿Qué hacemos?:</strong></p>
+        <div class="columns">
+            <ul class="col">
+                <li>Reparación</li>
+                <li>Mantenimiento</li>
+            </ul>
+            <ul class="col">
+                <li>Tornería</li>
+                <li>Asesoramiento</li>
+            </ul>
+            <ul class="col">
+                <li>Venta de Maquinaria</li>
+                <li>Atención Personalizada</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p><strong>Encuéntranos en:</strong></p>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://wa.me" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+        </a>
+    </div>
 </footer>
+<script src="scripts.js"></script>
 </body>
 </html>
